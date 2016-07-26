@@ -1,0 +1,12 @@
+fieldset {
+    border: none;
+}
+
+.form{
+	height: 400px;
+    width: 350px;
+	border: blue;
+	border-style: solid;
+ 
+	border-color:blue;
+}
