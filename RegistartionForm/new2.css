@@ -2,11 +2,17 @@ fieldset {
     border: none;
 }
 
-.form{
+form{
+	background-color: #66ccff;
 	height: 400px;
     width: 350px;
+}
+
+.fields
+{
+	height: 80%;
+    width: 80%;
 	border: blue;
 	border-style: solid;
- 
 	border-color:blue;
 }
