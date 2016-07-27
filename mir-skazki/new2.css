@@ -10,8 +10,9 @@
 	width: 550px;
 	background:#fff2e6;
 	padding: 20px;
-	border:#ffc299 double;
+	border:#ffc299 solid 3px;
 	margin-left:250px;
+	border-radius: 30px;
 }
 
 pre{
