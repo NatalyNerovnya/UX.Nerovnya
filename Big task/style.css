@@ -1,61 +1,256 @@
+   
+  @font-face {
+    font-family: MeriadPro; /* Гарнитура шрифта */
+    src: url(MyriadProRegular.ttf); /* Путь к файлу со шрифтом */
+   }
+
+   @font-face {
+    font-family: MeriadProBold; /* Гарнитура шрифта */
+    src: url(MyriadProBold.ttf); /* Путь к файлу со шрифтом */
+   }
+   
+    @font-face {
+    font-family: MeriadProSemiBold; /* Гарнитура шрифта */
+    src: url(MyriadProSemiBold.ttf); /* Путь к файлу со шрифтом */
+   }
+
+
    .gradient {
-    background: linear-gradient(to left, #a2679d 5%, white 40%,white 60%, #a2679d 95%);
-    padding: 10px ;
-	<!--margin: 0px -10px;-->
+    background: linear-gradient(to left, #94669b 5%, white 40%,white 60%, #a2679d 95%);
+    height: 36px;
+    padding-top: 1.1px;
    }
   
   .block-left{
-	  border: 1px solid red;
 	  width: 49%;
 	  display:inline-block;
 	  height:100%;
+    padding: 0px;
   }
   
   .block-right{
-	  border:1px solid green;
 	  width: 49%;
 	  display:inline-block;
 	  height:100%;
   }
   
-
+  body{
+    width:71.2%;
+    align-items: center;
+    font-family: MeriadPro;
+  }
   
   .name{
 	  text-transform: uppercase;    
-    font-size: 30px;
-    padding-left:20px;
+    text-align: center;
   }
 
-    .name h2{
-    font-family: "Myriad Pro", Myriad, Arial, sans-serif;
-    font-weight:600;
-    margin-bottom: 10px;
+    .name h2{    
+    font-size: 62px;
+    line-height: 0px;
+    padding-right: 35px;    
+    font-family: MeriadProBold;
+    text-align: center;
+    margin-top: 63px;
       }
 
+    .name h2#surname{
+      margin-top: 60px;
+      margin-bottom: 59px;
+    } 
+
  .name h2 span{
-    font-weight:bolder;
-    line-height: 70%;
-    font-size: 70px;
+    font-size: 104px;
+    padding-right: 11px;
+    margin-top: 0px;
+    padding-top: 10px;
       }
 
 
     .name h3{
-   font-family: Gadugi;
     font-weight:100;
-    color: #76236c;
-    font-size: 31px;
-    margin-top: 0px;
+    color: #6f156c;
+    font-size: 50px;
+    margin-top: 56px;
+    margin-bottom: 25px;
+    font-stretch:condensed;
+    padding-right: 35px;
+    line-height: 59px;
+    font-family: MeriadPro;
       }
 
  .name h3 span{
-    font-weight:bolder;
-    line-height: 70%;
-    font-size: 51px;
+    font-size: 67px;
       }
 
-  h4{
-     font-family: "Myriad Pro", Myriad, Arial, sans-serif;
+  h3.purple-line{
     border-left: #76236c solid 8px;
     text-transform: uppercase;
-    padding:6px 10px;
+    margin-left: 60px;
+    font-size: 23px;
+    padding-left: 10px;
+    height: 30px;
+    margin-bottom: 0px;
+    font-family: MeriadProBold;
   }    
+
+    .personal-statement span.left{
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-bottom: -40px;
+    margin-left: 75px;
+  }
+
+      .personal-statement span.right{
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-bottom: -40px;
+    margin-left: 442px;
+  }
+
+  .personal-statement span{
+    color:#76236c;
+    font-size: 60px;
+    margin:0px;
+    width:10%;
+    font-weight: 900px;
+    font-family: Georgia;
+  }
+
+  .personal-statement p{
+    font-size: 12px;
+    margin-left: 91.8px;
+    margin-top: -26px;
+    padding-top: -5px;
+    width:75%;
+    padding-right: 20px;
+    margin-bottom: 4.5px;
+    font-family: MeriadProSemiBold;
+  }
+
+.education .purple-line{
+  margin-top: 5px;
+  font-size: 25px;
+  height: 35px;
+  margin-bottom: 7px;
+}
+
+
+/*width: 0;
+height: 0px;
+border-style: solid;
+border-width:  7.5px 0 7.5px 10px;
+border-color: transparent transparent transparent #76236c;*/
+
+.education div {
+  /*display: inline-block;*/
+  width:125px;
+  margin-left: 65px;
+  height: 70px;
+  margin-top: 0px;
+  border-left: 4px solid #601c6a;
+}
+
+.education div#last-point-education {
+  height: 14px;
+}
+
+.education > div{
+  /*поднять границу примерно на 2-5пикс*/
+}
+
+.education div div{
+  display: inline-block;
+  width:195px;
+  margin-left: 125px;
+  margin-top: -21px;
+  border-left: none;
+}
+
+.education div div h4{
+  color: #6f156c;
+  font-family: MeriadProBold;
+  text-transform: uppercase;  
+  font-size: 21px;
+  margin: 0px;
+  line-height: 18px;
+  padding-left: 2px;
+}
+
+.education div div h5{
+  font-family: MeriadProBold;
+  margin: 0px;
+  font-size: 21px;
+  padding-left: 2px;
+
+}
+
+.education div div h6{
+  font-family: MeriadProBold;
+  margin: 0px;
+  font-size: 12px;
+  padding-left: 2px;
+}
+
+.education div p{
+  margin:0;
+  font-family: MeriadProBold;
+  padding-left: 11px;
+  margin-top: -2px;
+}
+
+
+
+/*.education div p.triangle{
+width: 0;
+height: 0px;
+border-style: solid;
+border-width:  7.5px 0 7.5px 10px;
+border-color: transparent transparent transparent #76236c;
+}*/
+
+div.experience{
+  margin-top: 123px;
+}
+
+div.experience h3{
+  margin-top: 123px;
+  font-size: 24px;
+}
+
+.experience .education div{
+  border:none;
+  width: 100%;
+  height: 100%;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.experience .education div p{
+  padding-top: 2px;
+}
+.experience p span{
+  font-size: 14px;
+}
+
+.work-together h3 span{
+  color: #6f156c;
+}
+
+.work-together h3{
+  height: 37px;
+  margin-top: 67px;
+  font-size: 25px;
+}
+
+.work-together p{
+  font-family: MeriadProSemiBold;
+  font-size: 16px;
+  margin-left: 91px;
+  margin-top: 9px;
+  line-height: 3.3px;
+}
+
+.work-together p span{
+  font-size: 18px;
+}
