@@ -1,0 +1,45 @@
+body >table{
+	width: 85%;
+	margin-left: 8%;
+	border-collapse: collapse;
+}
+tr.header img{
+	width: 250px;
+	padding-left: 20px;
+}
+
+.header table{
+	width: 100%;
+}
+.navbar{
+	color:white;
+	background: black;
+}
+
+.navbar{
+height:20px;	
+}
+
+.footer{
+	background: lightgrey;
+	color:grey;
+}
+
+.footer p{
+	text-align: center;
+}
+
+.ver-nav{
+	width:30%;	
+	align-items: flex-start;
+}
+
+.ver-nav ul{
+padding-top: 10px;
+margin-top: -300px;
+background: black;
+color: lightgrey;
+height: 200px;
+list-style: none;
+border:grey 5px;
+}
