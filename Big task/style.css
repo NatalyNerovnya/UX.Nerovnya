@@ -22,29 +22,30 @@
    }
   
   .block-left{
-	  width: 49%;
-	  display:inline-block;
+	  width: 50%;
 	  height:100%;
     padding: 0px;
+    float:left;
   }
   
   .block-right{
-	  width: 49%;
-	  display:inline-block;
+	  width: 50%;
 	  height:100%;
+    float: right;
   }
   
   body{
     width:71.2%;
     align-items: center;
     font-family: MeriadPro;
+    margin-left: 15%;
   }
   
   .name{
 	  text-transform: uppercase;    
     text-align: center;
     padding-top: 2px;
-    padding-right: 7px;
+    padding-right: 24px;
   }
 
     .name h2{    
@@ -84,19 +85,25 @@
       }
 
  .name h3 span{
-    font-size: 67px;
+    font-size: 72px;
       }
 
   h3.purple-line{
     border-left: #76236c solid 8px;
     text-transform: uppercase;
     margin-left: 60px;
-    font-size: 23px;
+    font-size: 27px;
     padding-left: 10px;
-    height: 30px;
+    height: 36px;
     margin-bottom: 0px;
     font-family: MeriadProBold;
+    margin-top: 20px;
   }    
+
+  .personal-statement{
+    margin-top: -5px;
+    margin-bottom: 5px;
+  }
 
     .personal-statement span.left{
     padding-right: 0px;
@@ -126,29 +133,21 @@
     margin-left: 93px;
     margin-top: -26px;
     padding-top: -5px;
-    width:75%;
+    width:74%;
     padding-right: 20px;
     margin-bottom: 4.5px;
     font-family: MeriadProSemiBold;
   }
 
 .education .purple-line{
-  margin-top: 5px;
+  margin-top: -4px;
   font-size: 25px;
   height: 35px;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
   padding-left: 12px;
 }
 
-
-/*width: 0;
-height: 0px;
-border-style: solid;
-border-width:  7.5px 0 7.5px 10px;
-border-color: transparent transparent transparent #76236c;*/
-
 .education div {
-  /*display: inline-block;*/
   width:125px;
   margin-left: 65px;
   height: 70px;
@@ -158,10 +157,6 @@ border-color: transparent transparent transparent #76236c;*/
 
 .education div#last-point-education {
   height: 14px;
-}
-
-.education > div{
-  /*поднять границу примерно на 2-5пикс*/
 }
 
 .education div div{
@@ -237,7 +232,13 @@ div.experience h3{
 .experience p span{
   font-size: 14px;
 }
-
+.experience .education .purple-line{
+  margin-top: 2px;
+  margin-bottom: 6px;
+}
+div.work-together{
+  height:140px;
+}
 .work-together h3 span{
   color: #6f156c;
 }
@@ -259,3 +260,85 @@ div.experience h3{
 .work-together p span{
   font-size: 18px;
 }
+
+.available-for h3.purple-line{
+  border-left: none;
+  font-size: 25px;
+  padding-left: 0px;
+  margin-left: 50px;
+  margin-top: 27px;
+}
+
+.available-for h4{
+  font-family: MeriadPro;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-top: -11px;
+  margin-left: 49px;
+}
+
+.available-for h4 span{
+  color:#6f156c;
+}
+
+.available-for div{
+  margin-left: 25px;
+
+}
+
+.available-for div{
+  margin-bottom: -6px;
+  margin-top: -26px;
+
+}
+
+.circle {
+  background:#6f156c;
+  border-radius: 50% ;
+  width: 32px;
+  height: 32px; 
+  margin-top: -42px;
+  clear: left;
+
+}
+
+.text-in-available-for{
+  float: left; 
+}
+
+.text-in-available-for h4{
+  font-size: 16px;
+  color:#6f156c;
+  margin-top: -12px;
+  margin-bottom: 0px;
+  margin-left:42px;
+}
+
+.text-in-available-for h5{
+  font-size: 15px;
+  margin-left:42px;
+  margin-top: 2px;
+}
+
+.text-in-available-for:after{
+  clear: left;
+}
+
+.balance{
+  background-color: #FFFACD;
+  margin-top: 70px;
+}
+
+.balance .purple-line{
+  margin-left: 30px;
+  padding-left: 12px;
+  height: 35px;
+  font-size: 24px;
+  margin-top: 74px;
+}
+
+
+
+
+
+
