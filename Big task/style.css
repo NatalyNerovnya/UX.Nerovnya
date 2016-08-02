@@ -325,7 +325,6 @@ div.work-together{
 }
 
 .balance{
-  background-color: #FFFACD;
   margin-top: 70px;
 }
 
@@ -336,6 +335,98 @@ div.work-together{
   font-size: 24px;
   margin-top: 74px;
 }
+
+.balance .work, .happiness, .play{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .balance .happiness{
+  background-color: #C1F2B1;
+  margin-left: 22px;
+}
+
+.balance .work{
+  background-color: #B1E2F2; 
+}
+
+
+.balance .play{
+  background-color: #F2C2B1;
+  text-align: right;
+  width: 180px;
+}
+
+  .balance .work, .play, .happiness h3{
+  color:#6f156c;
+  text-transform: uppercase;
+}
+
+.balance .play h3{
+  font-size:24px;
+  font-family: MeriadPro;
+  margin-top: 0px;
+  padding-right: 39px;
+  margin-bottom: 15px;
+}
+
+.balance .happiness h3{
+  font-family: MeriadProBold;
+  font-size: 22px;
+  margin-top: 1px;
+}
+
+.balance .work h3{
+  font-size:24px;
+  font-family: MeriadPro;
+  margin-top: 0px;
+  padding-left: 45px;
+  margin-bottom: 16px;
+}
+
+.balance .work h4{
+  color:#6f156c;
+  font-family:MeriadProBold;
+  font-size: 18px; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 43px;
+}
+
+.balance .work p{
+  font-size: 16px;
+  text-transform: none;
+  color:black;
+  margin-top: 3px;
+  padding-left: 45px;
+}
+
+.balance .play h4{
+  color:#6f156c;
+  font-family:MeriadProBold;
+  font-size: 18px; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-right: 35px;
+}
+
+.balance .play p{
+  font-size: 16px;
+  text-transform: none;
+  color:black;
+  margin-top: 3px;
+  padding-right: 39px;
+}
+
+/*.balance .work p:nth-child(2){
+  margin-bottom: 7px;
+}*/
+
+
+
+
+
+
 
 
 
