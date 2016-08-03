@@ -326,6 +326,7 @@ div.work-together{
 
 .balance{
   margin-top: 70px;
+  position: relative;
 }
 
 .balance .purple-line{
@@ -342,17 +343,10 @@ div.work-together{
   }
 
   .balance .happiness{
-  background-color: #C1F2B1;
   margin-left: 22px;
 }
 
-.balance .work{
-  background-color: #B1E2F2; 
-}
-
-
 .balance .play{
-  background-color: #F2C2B1;
   text-align: right;
   width: 180px;
 }
@@ -420,7 +414,97 @@ div.work-together{
 
 /*.balance .work p:nth-child(2){
   margin-bottom: 7px;
+}
+
+.balance .work p:nth-child(4){
+  margin-bottom: 5px;
+}
+
+.balance .work p:nth-child(5){
+  margin-bottom: 0px;
+}
+
+.balance .work p:nth-child(6){
+  margin-top: 2px;
+}
+
+.balance .play p:nth-child(1){
+  margin-bottom: 18px;
+}
+
+.balance .play p:nth-child(2){
+  margin-bottom: 3px;
+}
+
+.balance .play p:nth-child(3){
+  margin-bottom: 2px;
+}
+
+.balance .play p:nth-child(5){
+  margin-bottom: 0px;
+}
+
+.balance .play p:nth-child(6){
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.balance .play p:nth-child(7){
+  margin-top: 2px;
 }*/
+
+.img{
+  clear: all;
+  width:220px;
+  height: 130px;
+  position: absolute;
+  top: 109px;
+  left: 135px;
+}
+
+.big-circle{
+  background:#e368df;
+  border-radius: 50% ;
+  width: 120px;
+  height: 120px; 
+  opacity: 0.3;
+  margin-top: 5px;
+  position: absolute;
+}
+
+.big-circle:first-child{
+margin-left: 5px;
+}
+
+.big-circle:last-child{
+  margin-left: 88px;
+}
+
+.img img.pc-img{
+  width: 160px;
+  position:absolute;
+  margin-left: -35px;
+  margin-top: -23px;
+}
+
+
+.img img.smile-img{
+  width: 160px;
+  position:absolute;
+  margin-top: -23px;
+  margin-left: -32px;
+}
+
+.happiness .vertical-line{
+  position: absolute;
+  border-left:1px dotted;
+  margin-left: 55px;
+  height: 275px;
+  margin-top: -22px;
+}
+
+
+
 
 
 
