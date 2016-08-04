@@ -14,10 +14,21 @@
     src: url(MyriadProSemiBold.ttf); /* Путь к файлу со шрифтом */
    }
 
+  body{
+  }
 
+  .content{
+    width:997px;
+    font-family: MeriadPro;
+    margin: 0px;
+    margin: auto;
+  }
    .gradient {
     background: linear-gradient(to left, #94669b 5%, white 40%,white 60%, #a2679d 95%);
     height: 36px;
+   }
+
+   .gredient,.top{    
     padding-top: 1.1px;
    }
   
@@ -34,12 +45,7 @@
     float: right;
   }
   
-  body{
-    width:71.2%;
-    align-items: center;
-    font-family: MeriadPro;
-    margin-left: 15%;
-  }
+
   
   .name{
 	  text-transform: uppercase;    
@@ -86,6 +92,7 @@
 
  .name h3 span{
     font-size: 72px;
+    padding-left: 16px;
       }
 
   h3.purple-line{
@@ -198,16 +205,6 @@
   padding-left: 11px;
   margin-top: -2px;
 }
-
-
-
-/*.education div p.triangle{
-width: 0;
-height: 0px;
-border-style: solid;
-border-width:  7.5px 0 7.5px 10px;
-border-color: transparent transparent transparent #76236c;
-}*/
 
 div.experience{
   margin-top: 123px;
@@ -349,6 +346,7 @@ div.work-together{
 .balance .play{
   text-align: right;
   width: 180px;
+  margin-left: 2px;
 }
 
   .balance .work, .play, .happiness h3{
@@ -393,6 +391,7 @@ div.work-together{
   color:black;
   margin-top: 3px;
   padding-left: 45px;
+  margin-bottom: 3px;
 }
 
 .balance .play h4{
@@ -409,49 +408,31 @@ div.work-together{
   text-transform: none;
   color:black;
   margin-top: 3px;
-  padding-right: 39px;
-}
-
-/*.balance .work p:nth-child(2){
-  margin-bottom: 7px;
-}
-
-.balance .work p:nth-child(4){
-  margin-bottom: 5px;
-}
-
-.balance .work p:nth-child(5){
-  margin-bottom: 0px;
-}
-
-.balance .work p:nth-child(6){
-  margin-top: 2px;
-}
-
-.balance .play p:nth-child(1){
-  margin-bottom: 18px;
-}
-
-.balance .play p:nth-child(2){
+  padding-right: 39px;  
   margin-bottom: 3px;
 }
 
-.balance .play p:nth-child(3){
-  margin-bottom: 2px;
+.balance ul{
+  list-style: none;
+  padding-left: 0px;
 }
 
-.balance .play p:nth-child(5){
-  margin-bottom: 0px;
+.work .print{
+  margin-top: 39px;
 }
 
-.balance .play p:nth-child(6){
-  margin-top: 2px;
-  margin-bottom: 5px;
+.work .digital{
+  margin-top: 19px;
 }
 
-.balance .play p:nth-child(7){
-  margin-top: 2px;
-}*/
+.balance div ul li p span{
+  color: #6f156c;
+  font-family: MeriadProBold;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+
 
 .img{
   clear: all;
@@ -503,17 +484,48 @@ margin-left: 5px;
   margin-top: -22px;
 }
 
+.personal-skills{
+}
+.personal-skills .purple-line{
+  margin-left: 30px;
+  margin-top: 24px;
+}
 
+.progress-background{
+  position: relative;
+  width:210px;
+  float:left;
+  background-color: #e2d0e0;
+  height: 14px;
+  left: 228px;
+  top: -34px;
 
+}
 
+.progress-background .progress{
 
+  height: 100%;
+  width:70%;
+  position: absolute;
+  background: linear-gradient(to left, #a2679d 5%, white 50%, white 55%, #a2679d 95%);
+}
 
+.personal-skills p{
+  clear: left;
+  padding-left: 48px;
+  padding-top: 3px;
+}
 
+.progress.nineteen-percent{
+  width: 90%;
+  background-color: red;
+}
 
+.progress.ninty-nine-percent{
+  width: 99%;
+  background-color: red;
+}
 
-
-
-
-
-
-
+.progress.sixteen-percent{
+  width: 60%;
+}
