@@ -504,7 +504,7 @@ margin-left: 5px;
 .happiness .vertical-line{
   position: absolute;
   border-left:1px dotted;
-  margin-left: 55px;
+  margin-left: 52px;
   height: 275px;
   margin-top: -22px;
 }
@@ -541,16 +541,22 @@ margin-left: 5px;
   padding-top: 3px;
 }
 
-.progress.nineteen-percent{
+.progress.ninety-percent{
   width: 90%;
-  background-color: red;
+}
+
+.progress.ninety-three-percent{
+  width: 93%;
 }
 
 .progress.ninty-nine-percent{
   width: 99%;
-  background-color: red;
 }
 
-.progress.sixteen-percent{
+.progress.sixty-percent{
   width: 60%;
+}
+
+.progress.seventy-five-percent{
+  width: 75%;
 }
