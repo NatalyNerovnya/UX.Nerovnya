@@ -45,8 +45,6 @@
     float: right;
   }
   
-
-  
   .name{
 	  text-transform: uppercase;    
     text-align: center;
@@ -107,9 +105,6 @@
     margin-top: 20px;
   }    
 
-
-
-
   .personal-statement{
     margin-top: -5px;
   }
@@ -147,8 +142,6 @@
     margin-bottom: 4.5px;
     font-family: MeriadProSemiBold;
   }
-
-
 
 .education .purple-line{
   margin-top: -4px;
@@ -196,7 +189,6 @@
   margin: 0px;
   font-size: 21px;
   padding-left: 2px;
-
 }
 
 .education li div h6{
@@ -307,7 +299,6 @@ div.work-together{
 .available-for div{
   margin-bottom: -6px;
   margin-top: -26px;
-
 }
 
 .circle {
@@ -357,8 +348,7 @@ div.work-together{
 
 .balance .work, .happiness, .play{
     display: inline-block;
-    vertical-align: top;
-    
+    vertical-align: top;    
   }
 
   .balance .happiness{
@@ -374,7 +364,7 @@ div.work-together{
   margin-left: 2px;
 }
 
-  .balance .work, .play, .happiness h3{
+.balance .work, .play, .happiness h3{
   color:#6f156c;
   text-transform: uppercase;
 }
@@ -409,9 +399,11 @@ div.work-together{
   margin-bottom: 0px;
   padding-left: 43px;
 }
+
 .balance .work{
   width: 33%;
 }
+
 .balance .work p{
   font-size: 16px;
   text-transform: none;
@@ -458,8 +450,6 @@ div.work-together{
   font-size: 18px;
 }
 
-
-
 .img{
   clear: all;
   width:220px;
@@ -494,7 +484,6 @@ margin-left: 5px;
   margin-top: -23px;
 }
 
-
 .img img.smile-img{
   width: 160px;
   position:absolute;
@@ -512,6 +501,7 @@ margin-left: 5px;
 
 .personal-skills{
 }
+
 .personal-skills .purple-line{
   margin-left: 30px;
   margin-top: 24px;
@@ -524,12 +514,10 @@ margin-left: 5px;
   background-color: #e2d0e0;
   height: 14px;
   left: 228px;
-  top: -34px;
-
+  top: -4px;
 }
 
 .progress-background .progress{
-
   height: 100%;
   width:70%;
   position: absolute;
@@ -539,25 +527,173 @@ margin-left: 5px;
 .personal-skills p{
   clear: left;
   padding-left: 48px;
-  padding-top: 3px;
+  padding-top: 5px;
+  margin-bottom: -14px;
 }
 
-.progress.ninety-percent{
-  width: 90%;
+.progress.eighty-nine-percent{
+  width: 89%;
 }
 
-.progress.ninety-three-percent{
-  width: 93%;
+.progress.ninety-one-percent{
+  width: 91%;
 }
 
-.progress.ninty-nine-percent{
-  width: 99%;
+.progress.ninty-eight-percent{
+  width: 98%;
 }
 
-.progress.sixty-percent{
-  width: 60%;
+.progress.sixty-two-percent{
+  width: 62%;
 }
 
-.progress.seventy-five-percent{
-  width: 75%;
+.progress.eighty-percent{
+  width: 80%;
+}
+
+
+
+
+
+
+
+
+.software-skills{
+  margin-top: 56px;
+}
+
+.software-skills .purple-line{
+  margin-left: 28px;
+}
+
+.software-skills .diagram{
+  display: inline-block;
+  border-left: 4px solid;
+  border-bottom: 4px solid;
+  width: 358px;
+  height: 273px;
+  margin-left: 7px;
+  margin-top: 6px;
+}
+
+.software-skills p{
+  float: left;
+  margin-left: 47px;
+  margin-top: 18px;
+}
+
+.software-skills .column{
+  width: 36px;
+  display: inline-block;
+  height: 264px;
+  margin-left: 8px;  
+  margin-right: 3px;
+}
+
+.software-skills .column p{
+  transform: rotate(270deg);
+  margin-left: -13px;
+  margin-top: 215px;
+  font-size: 17px;
+}
+
+.software-skills .column:nth-child(2) p{
+  margin-left: -17px;
+  margin-top: 213px;
+}
+.software-skills .column:nth-child(3) p{
+  margin-left: -20px;
+  margin-top: 207px;
+}
+.software-skills .column:nth-child(4) p{
+  margin-left: -31px;
+  margin-top: 198px;
+}
+.software-skills .column:nth-child(5) p{
+  color: white;
+  margin-left: -18px;
+  margin-top: 211px;
+}
+.software-skills .column:nth-child(6) p{
+  margin-left: -30px;
+  margin-top: 199px;
+  color: white;
+}
+.software-skills .column:nth-child(7) p{
+  margin-left: -14px;
+  margin-top: 216px;
+  color: white;
+}
+
+.software-skills .light-gradient{
+  background: linear-gradient(to left, #a2679d 5%, white 50%, white 55%, #a2679d 95%);
+}
+
+.software-skills .dark-gradient{
+  color:white;
+  background: linear-gradient(to left, #4C0C54 5%, #782184 50%, #782184 55%, #4C0C54 95%);
+}
+
+.software-skills .heigth-seventy-seven-percent{
+  height: 77%;
+  margin-top: 58px;
+}
+
+.software-skills .heigth-eighty-four-percent{
+height: 84%;
+margin-top: 41px;
+}
+
+.software-skills .heigth-ninety-one-percent{
+  height: 91%;
+  margin-top: 23px;
+}
+
+.software-skills .heigth-fifty-percent{
+  height: 50%;
+  margin-top: 131px;
+}
+
+.software-skills .heigth-eighty-four-percent{
+  height: 84%;
+  margin-top: 41px;
+}
+
+.software-skills .heigth-seventy-three-percent{
+  height: 73%;
+  margin-top: 70px;
+}
+
+.software-skills .heigth-fourty-eight-percent{
+  height: 48%;
+  margin-top: 138px;
+}
+
+.software-skills .legend div{
+}
+
+.software-skills .legend div .light{
+  margin-left: 103px;
+  margin-top: 11px;
+  float: left;
+  width: 22px;
+  height: 21px;
+  display: inline-block; 
+  background: linear-gradient(to left, #a2679d 5%, white 50%, white 55%, #a2679d 95%);
+}
+
+.software-skills .legend div .dark{
+float: left;
+width: 22px;
+height: 21px;
+background: linear-gradient(to left, #4C0C54 5%, #782184 50%, #782184 55%, #4C0C54 95%);
+display: inline-block;
+margin-top: 10px;
+margin-left: 35px;
+}
+
+.software-skills .legend div p{
+    margin-left: 6px;
+    margin-top: 17px;
+    font-size: 16px;
 }
