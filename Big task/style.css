@@ -1,4 +1,4 @@
-   
+
   @font-face {
     font-family: MeriadPro; /* Гарнитура шрифта */
     src: url(MyriadProRegular.ttf); /* Путь к файлу со шрифтом */
@@ -121,7 +121,23 @@
     color:#76236c;
     font-size: 60px;
     font-family: Georgia;
+    float: left;
+    margin-left: -31px;
+    margin-top: -32px;
   }
+
+
+
+/*    display: inline-block;
+    position: relative;
+    content: "\201C";
+    color: #76236c;
+    font-size: 60px;
+    font-family: Georgia;
+    float: left;
+    margin-left: -31px;
+    margin-top: -32px;*/
+
 
   .personal-statement p::after{
     display: inline-block;
@@ -136,7 +152,7 @@
   .personal-statement p{
     font-size: 12px;
     margin-left: 93px;
-    margin-top: -4px;
+    margin-top: 33px;
     padding-top: -5px;
     width:74%;
     padding-right: 20px;
@@ -147,6 +163,16 @@
 
 
 
+/*font-size: 12px;
+    margin-left: 93px;
+    margin-top: -4px;
+    padding-top: -5px;
+    width: 74%;
+    padding-right: 20px;
+    margin-top: 33px;
+    margin-bottom: 4.5px;
+    font-family: MeriadProSemiBold;
+}*/
 
 
 .education .purple-line{
