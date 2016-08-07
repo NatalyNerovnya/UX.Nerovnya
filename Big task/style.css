@@ -14,15 +14,27 @@
     src: url(MyriadProSemiBold.ttf); /* Путь к файлу со шрифтом */
    }
 
-  body{
-  }
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: auto;
+  overflow-y: hidden;
+  margin: auto;
+  width: 100%;
+}
+
 
   .content{
-    width:997px;
-    font-family: MeriadPro;
-    margin: 0px;
-    margin: auto;
+  width:997px;
+  font-family: MeriadPro;
+  margin: 0px;
+  margin: auto;
+  margin-bottom: 39px;
+  overflow: auto;
+  overflow-y: hidden;
+  position: relative;
   }
+
    .gradient {
     background: linear-gradient(to left, #94669b 5%, white 40%,white 60%, #a2679d 95%);
     height: 36px;
@@ -31,6 +43,14 @@
    .gredient,.top{    
     padding-top: 1.1px;
    }
+
+   .gradient.bottom{
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  margin: 0px auto;
+  overflow: auto;
+}
   
   .block-left{
 	  width: 50%;
@@ -209,11 +229,11 @@
   background-position-y: 3px;
 }
 
-div.experience{
+.experience{
   margin-top: 70px;
 }
 
-div.experience h3{
+.experience h3{
   margin-top: 123px;
   font-size: 24px;
 }
@@ -246,7 +266,7 @@ div.experience h3{
   margin-bottom: 112px;
 }
 
-div.work-together{
+.work-together{
   height:140px;
 }
 .work-together h3 span{
@@ -551,13 +571,6 @@ margin-left: 5px;
   width: 80%;
 }
 
-
-
-
-
-
-
-
 .software-skills{
   margin-top: 56px;
 }
@@ -624,6 +637,26 @@ margin-left: 5px;
   margin-top: 216px;
   color: white;
 }
+
+
+.diagram:nth-child(2){
+  margin-right: 2px;
+}
+
+.diagram:nth-child(4){
+  margin-left: 9px;
+}
+
+.diagram:nth-child(5){
+margin-right: 2px;
+margin-left: 7px;
+}
+
+.diagram:nth-child(7){
+margin-left: 8px;
+ margin-right: 0px;
+}
+
 
 .software-skills .light-gradient{
   background: linear-gradient(to left, #a2679d 5%, white 50%, white 55%, #a2679d 95%);

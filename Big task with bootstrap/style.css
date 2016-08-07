@@ -1,0 +1,706 @@
+
+  @font-face {
+    font-family: MeriadPro; /* Гарнитура шрифта */
+    src: url(MyriadProRegular.ttf); /* Путь к файлу со шрифтом */
+   }
+
+   @font-face {
+    font-family: MeriadProBold; /* Гарнитура шрифта */
+    src: url(MyriadProBold.ttf); /* Путь к файлу со шрифтом */
+   }
+   
+    @font-face {
+    font-family: MeriadProSemiBold; /* Гарнитура шрифта */
+    src: url(MyriadProSemiBold.ttf); /* Путь к файлу со шрифтом */
+   }
+
+
+   .gradient {
+    background: linear-gradient(to left, #94669b 5%, white 40%,white 60%, #a2679d 95%);
+    height: 36px;
+   }
+
+   .gredient,.top{    
+    padding-top: 1.1px;
+   }
+
+   .gradient.bottom{
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  margin: 0px auto;
+  overflow: auto;
+}
+
+.container{
+  font-family: MeriadPro;
+}
+
+.name{
+    text-transform: uppercase;    
+    text-align: center;
+    padding-top: 2px;
+    padding-right: 24px;
+  }
+
+    .name h2{    
+    font-size: 63px;
+    line-height: 0px;
+    padding-right: 35px;    
+    font-family: MeriadProBold;
+    text-align: center;
+    margin-top: 63px;
+      }
+
+    .name h2#surname{
+      margin-top: 59px;
+      margin-bottom: 59px;
+      margin-right: 4px;
+    } 
+
+ .name h2 span{
+    font-size: 104px;
+    padding-right: 11px;
+    margin-top: 0px;
+    padding-top: 10px;
+      }
+
+
+    .name h3{
+    font-weight:100;
+    color: #6f156c;
+    font-size: 50px;
+    margin-top: 56px;
+    margin-bottom: 25px;
+    font-stretch:condensed;
+    padding-right: 40px;
+    line-height: 59px;
+    font-family: MeriadPro;
+    padding-top: 1px;
+      }
+
+ .name h3 span{
+    font-size: 72px;
+    padding-left: 16px;
+      }
+
+
+
+      h3.purple-line{
+    border-left: #76236c solid 8px;
+    text-transform: uppercase;
+    margin-left: 58px;
+    font-size: 27px;
+    padding-left: 10px;
+    height: 36px;
+    margin-bottom: 0px;
+    font-family: MeriadProBold;
+    margin-top: 20px;
+  }    
+
+  .personal-statement{
+    margin-top: -5px;
+  }
+
+.personal-statement p::before{
+    display: block;
+    position: relative;
+    content: "\201C";
+    color: #76236c;
+    font-size: 60px;
+    font-family: Georgia;
+    margin-left: -21px;
+    line-height: 0;
+    padding-left: 2px;
+  }
+
+  .personal-statement p::after{
+    display: inline-block;
+    position: relative;
+    content: "\201D";
+    color: #76236c;
+    font-size: 60px;
+    font-family: Georgia;
+    margin-left: 350px;
+    margin-top: 3px;
+  }
+
+  .personal-statement p{
+    font-size: 12px;
+    margin-left: 91px;
+    margin-top: 37px;
+    padding-top: -5px;
+    width: 72%;
+    padding-right: 20px;
+    margin-bottom: 4.5px;
+    font-family: MeriadProSemiBold;
+  }
+
+.education .purple-line{
+  margin-top: -4px;
+  font-size: 25px;
+  height: 35px;
+  margin-bottom: 10px;
+  padding-left: 12px;
+}
+
+.education ul {
+  margin-left: 62px;
+  margin-top: -1px;
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 122px;
+}
+
+.education li{
+  height: 67px;  
+  border-left: 4px solid #601c6a;
+}
+
+.education li:last-child{
+  height: 15px;
+}
+.education li div{
+  display: inline-block;
+  margin-left: 125px;
+  margin-top: -21px;
+  border-left: none;
+}
+
+.education li div h4{
+  color: #6f156c;
+  font-family: MeriadProBold;
+  text-transform: uppercase;  
+  font-size: 21px;
+  margin: 0px;
+  line-height: 18px;
+  padding-left: 2px;
+}
+
+.education li div h5{
+  font-family: MeriadProBold;
+  margin: 0px;
+  font-size: 21px;
+  padding-left: 2px;
+}
+
+.education li div h6{
+  font-family: MeriadProBold;
+  margin: 0px;
+  font-size: 12px;
+  padding-left: 2px;
+}
+
+.education li p{
+  margin:0;
+  font-family: MeriadProBold;
+  padding-left: 11px;
+  background-image: url(triangle.png);
+  background-size: 18px;
+  background-position-x: -5px;  
+  background-repeat: no-repeat;
+  background-position-y: 3px;
+}
+.experience{
+  margin-top: 70px;
+}
+
+.experience h3{
+  margin-top: 123px;
+  font-size: 24px;
+}
+
+.experience .education div{
+  border:none;
+  width: 100%;
+  height: 100%;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.experience .education li p{
+  background: none;
+  padding-left: 14px;
+}
+.experience p span{
+  font-size: 14px;
+}
+.experience .education .purple-line{
+  margin-top: 2px;
+  margin-bottom: 13px;
+}
+
+.experience .education li{
+  border:none;
+}
+
+.experience .education ul{
+  margin-bottom: 112px;
+}
+
+.work-together{
+  height:140px;
+}
+.work-together h3 span{
+  color: #6f156c;
+}
+
+.work-together h3{
+  height: 37px;
+  margin-top: 67px;
+  font-size: 25px;
+}
+
+.work-together p{
+  font-family: MeriadProSemiBold;
+  font-size: 16px;
+  margin-left: 91px;
+  margin-top: 9px;
+  line-height: 3.3px;
+}
+
+.work-together p span{
+  font-size: 18px;
+}
+
+.available-for h3.purple-line{
+  border-left: none;
+  font-size: 25px;
+  padding-left: 0px;
+  margin-left: 50px;
+  margin-top: 27px;
+}
+
+.available-for h4{
+  font-family: MeriadPro;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-top: -11px;
+  margin-left: 49px;
+}
+
+.available-for h4 span{
+  color:#6f156c;
+}
+
+.available-for div{
+  margin-left: 25px;
+
+}
+
+.available-for div{
+  margin-bottom: -6px;
+  margin-top: -26px;
+}
+
+.circle {
+  background:#6f156c;
+  border-radius: 50% ;
+  width: 32px;
+  height: 32px; 
+  margin-top: -42px;
+  clear: left;
+
+}
+
+.text-in-available-for{
+  float: left; 
+}
+
+.text-in-available-for h4{
+  font-size: 16px;
+  color:#6f156c;
+  margin-top: -12px;
+  margin-bottom: 0px;
+  margin-left:42px;
+}
+
+.text-in-available-for h5{
+  font-size: 15px;
+  margin-left:42px;
+  margin-top: 2px;
+}
+
+.text-in-available-for:after{
+  clear: left;
+}
+
+
+.balance{
+  margin-top: 70px;
+  position: relative;
+}
+
+.balance .purple-line{
+  margin-left: 30px;
+  padding-left: 12px;
+  height: 35px;
+  font-size: 24px;
+  margin-top: 74px;
+}
+
+.balance .work, .happiness, .play{
+    display: inline-block;
+    vertical-align: top;    
+  }
+
+  .balance .happiness{
+  margin-left: 22px;
+  z-index: 2;
+  width: 20%;
+  height: 100%;
+}
+
+.balance .play{
+  text-align: right;
+  width: 30%;
+  margin-left: 2px;
+}
+
+.balance .work, .play, .happiness h3{
+  color:#6f156c;
+  text-transform: uppercase;
+}
+
+.balance .play h3{
+  font-size:24px;
+  font-family: MeriadPro;
+  margin-top: 0px;
+  padding-right: 2px;
+  margin-bottom: 15px;
+}
+
+.balance .happiness h3{
+  font-family: MeriadProBold;
+  font-size: 22px;
+  margin-top: 1px;
+}
+
+.balance .work h3{
+  font-size:24px;
+  font-family: MeriadPro;
+  margin-top: 0px;
+  padding-left: 45px;
+  margin-bottom: 16px;
+}
+
+.balance .work h4{
+  color:#6f156c;
+  font-family:MeriadProBold;
+  font-size: 18px; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 43px;
+}
+
+.balance .work{
+  width: 33%;
+}
+
+.balance .work p{
+  font-size: 16px;
+  text-transform: none;
+  color:black;
+  margin-top: 3px;
+  padding-left: 45px;
+  margin-bottom: 3px;
+}
+
+.balance .play h4{
+  color:#6f156c;
+  font-family:MeriadProBold;
+  font-size: 18px; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-right: 35px;
+}
+
+.balance .play p{
+  font-size: 16px;
+  text-transform: none;
+  color:black;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.balance ul{
+  list-style: none;
+  padding-left: 0px;
+}
+
+.work .print{
+  margin-top: 39px;
+}
+
+.work .digital{
+  margin-top: 19px;
+}
+
+.balance div ul li p span{
+  color: #6f156c;
+  font-family: MeriadProBold;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.img{
+  clear: all;
+  width:220px;
+  height: 130px;
+  position: absolute;
+  top: 109px;
+  left: 135px;
+}
+
+.big-circle{
+  background:#e368df;
+  border-radius: 50% ;
+  width: 120px;
+  height: 120px; 
+  opacity: 0.3;
+  margin-top: 5px;
+  position: absolute;
+}
+
+.big-circle:first-child{
+margin-left: 5px;
+}
+
+.big-circle:last-child{
+  margin-left: 88px;
+}
+
+.img img.pc-img{
+  width: 160px;
+  position:absolute;
+  margin-left: -35px;
+  margin-top: -23px;
+}
+
+.img img.smile-img{
+  width: 160px;
+  position:absolute;
+  margin-top: -23px;
+  margin-left: -32px;
+}
+
+.happiness .vertical-line{
+  position: absolute;
+  border-left:1px dotted;
+  margin-left: 52px;
+  height: 275px;
+  margin-top: -22px;
+}
+
+.personal-skills{
+}
+
+.personal-skills .purple-line{
+  margin-left: 30px;
+  margin-top: 24px;
+}
+
+.progress-background{
+  position: relative;
+  width:210px;
+  float:left;
+  background-color: #e2d0e0;
+  height: 14px;
+  left: 228px;
+  top: -4px;
+}
+
+.progress-background .progress{
+  height: 100%;
+  width:70%;
+  position: absolute;
+  background: linear-gradient(to left, #a2679d 5%, white 50%, white 55%, #a2679d 95%);
+}
+
+.personal-skills p{
+  clear: left;
+  padding-left: 48px;
+  padding-top: 5px;
+  margin-bottom: -14px;
+}
+
+.progress.eighty-nine-percent{
+  width: 89%;
+}
+
+.progress.ninety-one-percent{
+  width: 91%;
+}
+
+.progress.ninty-eight-percent{
+  width: 98%;
+}
+
+.progress.sixty-two-percent{
+  width: 62%;
+}
+
+.progress.eighty-percent{
+  width: 80%;
+}
+
+
+.software-skills{
+  margin-top: 56px;
+}
+
+.software-skills .purple-line{
+  margin-left: 28px;
+}
+
+.software-skills .diagram{
+  display: inline-block;
+  border-left: 4px solid;
+  border-bottom: 4px solid;
+  width: 358px;
+  height: 273px;
+  margin-left: 7px;
+  margin-top: 6px;
+}
+
+.software-skills p{
+  float: left;
+  margin-left: 47px;
+  margin-top: 18px;
+}
+
+.software-skills .column{
+  width: 36px;
+  display: inline-block;
+  height: 264px;
+  margin-left: 8px;  
+  margin-right: 3px;
+}
+
+.software-skills .column p{
+  transform: rotate(270deg);
+  margin-left: -13px;
+  margin-top: 215px;
+  font-size: 17px;
+}
+
+.software-skills .column:nth-child(2) p{
+  margin-left: -17px;
+  margin-top: 213px;
+}
+.software-skills .column:nth-child(3) p{
+  margin-left: -20px;
+  margin-top: 207px;
+}
+.software-skills .column:nth-child(4) p{
+  margin-left: -31px;
+  margin-top: 198px;
+}
+.software-skills .column:nth-child(5) p{
+  color: white;
+  margin-left: -18px;
+  margin-top: 211px;
+}
+.software-skills .column:nth-child(6) p{
+  margin-left: -30px;
+  margin-top: 199px;
+  color: white;
+}
+.software-skills .column:nth-child(7) p{
+  margin-left: -14px;
+  margin-top: 216px;
+  color: white;
+}
+
+
+.diagram:nth-child(2){
+  margin-right: 2px;
+}
+
+.diagram:nth-child(4){
+  margin-left: 9px;
+}
+
+.diagram:nth-child(5){
+margin-right: 2px;
+margin-left: 7px;
+}
+
+.diagram:nth-child(7){
+margin-left: 8px;
+ margin-right: 0px;
+}
+
+
+.software-skills .light-gradient{
+  background: linear-gradient(to left, #a2679d 5%, white 50%, white 55%, #a2679d 95%);
+}
+
+.software-skills .dark-gradient{
+  color:white;
+  background: linear-gradient(to left, #4C0C54 5%, #782184 50%, #782184 55%, #4C0C54 95%);
+}
+
+.software-skills .heigth-seventy-seven-percent{
+  height: 77%;
+  margin-top: 58px;
+}
+
+.software-skills .heigth-eighty-four-percent{
+height: 84%;
+margin-top: 41px;
+}
+
+.software-skills .heigth-ninety-one-percent{
+  height: 91%;
+  margin-top: 23px;
+}
+
+.software-skills .heigth-fifty-percent{
+  height: 50%;
+  margin-top: 131px;
+}
+
+.software-skills .heigth-eighty-four-percent{
+  height: 84%;
+  margin-top: 41px;
+}
+
+.software-skills .heigth-seventy-three-percent{
+  height: 73%;
+  margin-top: 70px;
+}
+
+.software-skills .heigth-fourty-eight-percent{
+  height: 48%;
+  margin-top: 138px;
+}
+
+.software-skills .legend div{
+}
+
+.software-skills .legend div .light{
+  margin-left: 103px;
+  margin-top: 11px;
+  float: left;
+  width: 22px;
+  height: 21px;
+  display: inline-block; 
+  background: linear-gradient(to left, #a2679d 5%, white 50%, white 55%, #a2679d 95%);
+}
+
+.software-skills .legend div .dark{
+float: left;
+width: 22px;
+height: 21px;
+background: linear-gradient(to left, #4C0C54 5%, #782184 50%, #782184 55%, #4C0C54 95%);
+display: inline-block;
+margin-top: 10px;
+margin-left: 35px;
+}
+
+.software-skills .legend div p{
+    margin-left: 6px;
+    margin-top: 17px;
+    font-size: 16px;
+}
