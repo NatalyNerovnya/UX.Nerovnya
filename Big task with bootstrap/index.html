@@ -2,24 +2,63 @@
 <html>
 <head>
 	<title>Big task with bootstrap</title>
-	<link rel="stylesheet/less" type="text/css" href="styles.less" />
+	<link rel="stylesheet/less" type="text/css" href="style.less" />
   	<script src="less.js" type="text/javascript"></script>
   	<link rel='stylesheet' href='bootstrap.min.css' type='text/css' media='all'>
   	<link href="style.css" rel="stylesheet">
   	<meta charset="utf-8">
 </head>
 <body>
+<div class="wrapper">
   <div class="gradient top"></div>  
 
   <div class="container">
-  <div class="col-md-6">
-    <div class="name">
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="name">
          <h2><span>name</span></h2>
          <h2 id="surname">surname</h2>
          <h3>web & graphic<br><span>designer</span></h3>
     </div>
 
-    <div class="personal-statement">
+    </div>
+    <div class="col-md-6">
+      <div class="available-for">
+        <h3 class="purple-line">available for:</h3>
+        <h4>hire <span>&</span> freelancer work</h4>
+        <div>
+          <div class="circle"></div>
+          <div class="text-in-available-for">
+            <h4>website</h4>
+            <h5>www.yourwebsite.com</h5>
+          </div>
+        </div>
+
+        <div>
+          <div class="circle"></div>
+          <div class="text-in-available-for">
+            <h4>phone numbre</h4>
+            <h5>555-555-555</h5>
+          </div>
+        </div>
+
+        <div>
+          <div class="circle"></div>
+          <div class="text-in-available-for">
+            <h4>e-mail</h4>
+            <h5>name@yourdomain.com</h5>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="personal-statement">
         <h3 class="purple-line">personal statement</h3>
         <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, impe.</p>
@@ -63,66 +102,13 @@
         </li>
       </ul> 
     </div> 
-
-    <div class="experience">
-         <div class="education">   
-          <h3 class="purple-line">experience</h3> 
-          <ul>
-            <li>
-              <p>JUL - SEP &nbsp;<span>&nbsp;09</span></p>
-              <div>
-                <h4>company name 01</h4>
-                <h5>Specific job 01</h5>
-                <h6>Short description.</h6>
-              </div>
-            </li>
-          </ul>
-        </div>
     </div>
-
-	<div class="work-together">
-        <h3 class="purple-line">why we should <span>work together</span>!</h3>
-        <p>Give the reason number <span>01</span></p>
-        <p>Give the reason number <span>02</span></p>
-        <p>Give the reason number <span>03</span></p>
-        <p>Give the reason number <span>04</span></p>
-    </div>
-  	
-  </div>
-  <div class="col-md-6">
-      <div class="available-for">
-        <h3 class="purple-line">available for:</h3>
-        <h4>hire <span>&</span> freelancer work</h4>
-        <div>
-          <div class="circle"></div>
-          <div class="text-in-available-for">
-            <h4>website</h4>
-            <h5>www.yourwebsite.com</h5>
-          </div>
-        </div>
-
-        <div>
-          <div class="circle"></div>
-          <div class="text-in-available-for">
-            <h4>phone numbre</h4>
-            <h5>555-555-555</h5>
-          </div>
-        </div>
-
-        <div>
-          <div class="circle"></div>
-          <div class="text-in-available-for">
-            <h4>e-mail</h4>
-            <h5>name@yourdomain.com</h5>
-          </div>
-        </div>
-      </div>
-
-
+    <div class="col-md-6">
       <div class="balance">
         <h3 class="purple-line">work/play balance</h3>
         <div class="work">
-          <h3>work</h3>
+          <h3>work</h3>          
+          <div class="vertical-line"></div>
             <div>
               <ul>
                 <li><p><span>preferences</span></p></li>
@@ -150,7 +136,6 @@
 
         <div class="happiness">
           <h3>happiness</h3>
-          <div class="vertical-line"></div>
         </div>
 
         <div class="play">
@@ -188,7 +173,7 @@
         </div>
       </div>
       
-	  <div class="personal-skills">
+    <div class="personal-skills">
         <h3 class="purple-line">personal skills</h3>
         <p>Social Management</p>
         <div class="progress-background"><div class="progress eighty-nine-percent"></div></div>
@@ -201,8 +186,36 @@
         <p>Team Player</p>
         <div class="progress-background"><div class="progress eighty-percent"></div></div>
       </div>
+    </div>
+  </div>
 
-      <div class="software-skills">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="experience">
+         <div class="education">   
+          <h3 class="purple-line">experience</h3> 
+          <ul>
+            <li>
+              <p>JUL - SEP &nbsp;<span>&nbsp;09</span></p>
+              <div>
+                <h4>company name 01</h4>
+                <h5>Specific job 01</h5>
+                <h6>Short description.</h6>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+      <div class="work-together">
+        <h3 class="purple-line">why we should <span>work together</span>!</h3>
+        <p>Give the reason number <span>01</span></p>
+        <p>Give the reason number <span>02</span></p>
+        <p>Give the reason number <span>03</span></p>
+        <p>Give the reason number <span>04</span></p>
+    </div>
+    </div>
+    <div class="col-md-6">
+            <div class="software-skills">
         <h3 class="purple-line">software skills</h3>
         <p>100%</p>
         <div class="diagram">
@@ -254,18 +267,24 @@
           </div>
         </div>
       </div>
-
-
-
-
-
-
+    </div>
+  </div>
 
 
   </div>
-
-  </div>
-    	
-<!--   <div class="gradient bottom"></div>  -->
+  <div class="gradient bottom"></div>
+    	</div>
 </body>
 </html>
+
+
+
+
+<!-- p,h1,h2,h3,h4,h5,h6{
+  white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    text-overflow: ellipsis; /* Многоточие */
+    &:hover {
+    white-space: normal; /* Обычный перенос текста */
+   }
+} -->
