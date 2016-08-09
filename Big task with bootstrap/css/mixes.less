@@ -11,28 +11,28 @@ display: @display;
 position: relative;
 content: @content;
 font-size: 60px;
-font-family: Georgia;
+font-family: Georgia, serif;
 margin-left: @margin-left;
 }
 
 
-.education-text(@font-size, @padding-left)
+.education-text(@font-size)
 {
   font-family: @font-bold;
-  margin: 0px;
   font-size: @font-size;
-  padding-left: @padding-left;
+  padding-left: 2px;
+  margin: 0px;
 }
 
-.diagram-column-height(@h, @marg-top)
+.diagram-column-height(@height, @marg-top)
 {
-  height: @h;
+  height: @height;
   margin-top: @marg-top;
 }
 
 
 .img(@margin-left){
-  margin:-23px inherit inherit @margin-left;
+  margin:-23px 0px 0px @margin-left;
   width: 160px;
   position: absolute;
 }
@@ -43,5 +43,5 @@ width: 22px;
 height: 21px;
 display: inline-block; 
 background: @background;
-margin: @margin-top inherit inherit @margin-left;
+margin: @margin-top 0px 0px @margin-left;
 }

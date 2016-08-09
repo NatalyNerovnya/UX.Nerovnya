@@ -18,12 +18,17 @@ h2, h3{
   text-transform: uppercase;
 }
 
+h3, h4{
+  color: @purple-color;
+}
+
 p, h1, h2, h3, h4, h5, h6 {
-    white-space: nowrap; /* Отменяем перенос текста */
-    overflow: hidden; /* Обрезаем содержимое */
-    text-overflow: ellipsis; /* Многоточие */
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+
     &:hover {
-        white-space: normal; /* Обычный перенос текста */
+        white-space: normal;
     }
 }
 
@@ -43,102 +48,67 @@ html, body {
     width: 100%;
 }
 
-.container {
-    margin: 0px 0px 39px 0px;
-    margin: auto;
-    overflow: auto;
-    overflow-y: hidden;
-    position: relative;
-    font-family: @font;
-}
-
 .name {
     text-align: center;
-    padding: 2px 24px inherit inherit;
+    padding: 2px 24px 0px 0px;
 
     h2 {
         .text(63px, -16px, @font-bold);
-        padding-right: 35px;
-        text-align: center;
-        margin-top: 0px;
-
-        #surname {
-            margin: 59px 4px 59px inherit;
-        }
 
         span {
             font-size: 104px;
-            padding: 10px 11px inherit inherit;
-            margin-top: 0px;
         }
     }
 
     h3 {
         .text(50px, 25px, @font);
         font-weight: 100;
-        color: @purple-color;
-        margin-top: 56px;
-        font-stretch: condensed;
-        padding: 1px 40px inherit inherit;
-        line-height: 59px;
 
         span {
             font-size: 72px;
-            padding-left: 16px;
         }
     }
 }
 
-&.purple-line {
+
+
+.purple-line {
     .text(27px, 0px, @font-bold);
     border-left: #76236c solid 8px;
     text-transform: uppercase;
-    marrgin: 20px inherit inherit 58px;
+    marrgin: 20px 0px 0px 58px;
     padding-left: 10px;
     height: 36px;
+    color: black;
 }
 
 
 
 
 .personal-statement {
-    margin-top: -5px;
-
     p {
         .text(12px, 4.5px, @font-semi-bold);
-        white-space: normal; /* Отменяем перенос текста */
-        overflow: visible; /* Обрезаем содержимое */
-        margin: 37px inherit inherit 91px;
-        padding-top: -5px;
+        white-space: normal;
+        overflow: visible; 
         width: 72%;
-        padding-right: 20px;
 
         &::before {
-            .before-after-per-st(block, "\201C", -21px);
-            line-height: 0;
-            padding-left: 2px;
+            .before-after-per-st(block, "\201C", 0px);
         }
 
         &::after {
             .before-after-per-st(inline-block, "\201D", 350px);
-            margin-top: 3px;
         }
     }
 }
 
 
 .education {
-    .purple-line {
-        margin: -4px inherit 10px inherit;
-        font-size: 25px;
-        height: 35px;
-        padding-left: 12px;
-    }
 
     ul {
-        margin: -1px inherit 122px 62px;
         list-style: none;
-        padding-left: 0px;
+        margin-top: 30px;
+
     }
 
     li {
@@ -151,23 +121,24 @@ html, body {
 
         div {
             display: inline-block;
-            margin: -21px inherit inherit 125px;
+             margin: -21px 0px 0px 125px;
             border-left: none;
 
             h4 {
-                color: @purple-color;
-                .education-text(21px, 2px);
+                .education-text(21px);
                 text-transform: uppercase;
-                line-height: 18px;
             }
 
-            h5, h6 {
-                .education-text(21px, 2px);
+            h5{
+                .education-text(18px);
+            }
+
+             h6 {
+                .education-text(14px);
             }
         }
 
         p {
-            margin: 0;
             font-family: @font-bold;
             padding-left: 11px;
             background-image: url(triangle.png);
@@ -180,19 +151,13 @@ html, body {
 }
 
 .experience {
-    margin-top: 70px;
-
-    h3 {
-        margin-top: 123px;
-        font-size: 24px;
-    }
+     margin-top: 70px;
 
     .education {
         div {
             border: none;
             width: 100%;
             height: 100%;
-            padding: 2px inherit inherit 2px;
         }
 
         li {
@@ -200,16 +165,11 @@ html, body {
 
             p {
                 background: none;
-                padding-left: 14px;
             }
         }
 
         ul {
-            margin-bottom: 112px;
-        }
-
-        .purple-line {
-            margin: 2px inherit 13px inherit;
+             margin-bottom: 112px;
         }
 
         p {
@@ -226,8 +186,6 @@ html, body {
 
     h3 {
         height: 37px;
-        margin-top: 67px;
-        font-size: 25px;
 
         span {
             color: @purple-color;
@@ -236,8 +194,7 @@ html, body {
 
     p {
         .text(16px,0px, @font-semi-bold);
-        margin: 0px inherit inherit 91px;
-        padding-top: 0px;
+         margin: 0px 0px 0px 91px;
 
         span {
             font-size: 18px;
@@ -248,9 +205,10 @@ html, body {
 
 .available-for {
     h4 {
+      color: black;
         font-size: 28px;
         text-transform: uppercase;
-        margin: -11px inherit inherit 49px;
+        margin: -11px 0px 0px 49px;
 
         span {
             color: @purple-color;
@@ -266,7 +224,7 @@ html, body {
             border-left: none;
             font-size: 25px;
             padding-left: 0px;
-            margin: 27px inherit inherit 50px;
+            margin: 27px 0px 0px 50px;
         }
     }
 }
@@ -275,17 +233,17 @@ html, body {
 
 .text-in-available-for {
     float: left;
-    margin-top: -21px;
+     margin-top: -21px;
 
     h4 {
+      color: @purple-color;
         font-size: 16px;
-        color: @purple-color;
-        margin: -12px inherit 0px 42px;
+         margin: -12px 0px 0px 42px;
     }
 
     h5 {
         font-size: 15px;
-        margin: 2px inherit inherit 42px;
+         margin: 2px 0px 0px 42px;
     }
 
     &:after {
@@ -299,6 +257,7 @@ html, body {
     width: 32px;
     height: 32px;
     clear: left;
+    margin-top: 20px;
 }
 
 .balance {
@@ -310,17 +269,9 @@ html, body {
         padding-left: 0px;
     }
 
-    .purple-line {
-        margin-left: 30px;
-        padding-left: 12px;
-        height: 35px;
-        font-size: 24px;
-    }
-
     .work {
         width: 33%;
         display: inline-block;
-        vertical-align: top;
 
         .print {
             margin-top: 39px;
@@ -330,67 +281,39 @@ html, body {
             margin-top: 19px;
         }
 
-        h3 {
-            color: @purple-color;
-            font-size: 24px;
-            margin: 0px inherit 16px inherit;
-            padding-left: 45px;
-        }
-
         h4 {
-            color: @purple-color;
             font-family: @font-bold;
             font-size: 18px;
-            margin: 0px inherit 0px inherit;
-            padding-left: 43px;
         }
 
         p {
             font-size: 16px;
-            text-transform: none;
             color: black;
-            margin: 3px inherit;
-            padding-left: 45px;
         }
     }
 
     .play {
         display: inline-block;
-        vertical-align: top;
         text-align: right;
         width: 30%;
-        margin: -18px inherit inherit -19px;
-
-        h3 {
-            color: @purple-color;
-        }
 
         h4 {
             .text(18px, 0px, @font-bold);
-            color: @purple-color;
-            margin-top: 0px;
-            padding-right: 35px;
         }
 
         p {
             font-size: 16px;
-            text-transform: none;
-            margin: 3px inherit;
         }
     }
 
     .happiness {
         display: inline-block;
         vertical-align: top;
-        margin-left: 10px;
-        z-index: 2;
         width: 23%;
         height: 100%;
 
         h3 {
-            color: @purple-color;
             font: 22px @font-bold;
-            margin-top: 1px;
         }
     }
 
@@ -405,7 +328,7 @@ html, body {
 .vertical-line {
     position: absolute;
     border-left: 1px dotted;
-    margin: 9px inherit inherit 242px;
+    margin: 9px 0px 0px 242px;
     height: 73%;
 }
 
@@ -414,7 +337,7 @@ html, body {
     width: 220px;
     height: 130px;
     position: absolute;
-    top: 109px;
+    top: 160px;
     left: 135px;
 
     img {
@@ -450,14 +373,11 @@ html, body {
 
 
 .personal-skills {
-    .purple-line {
-        margin: 24px inherit inherit 30px;
-    }
 
     p {
         clear: left;
-        padding: 5px inherit inherit 48px;
-        margin-bottom: -14px;
+         padding: 5px 0px 0px 48px;
+         margin-bottom: -14px;
     }
 }
 
@@ -502,9 +422,6 @@ html, body {
 .software-skills {
     margin-top: 56px;
 
-    .purple-line {
-        margin-left: 28px;
-    }
 
     .diagram {
         display: inline-block;
@@ -512,77 +429,60 @@ html, body {
         border-bottom: 4px solid;
         width: 364px;
         height: 273px;
-        margin: 6px inherit inherit 7px;
-
-        &:nth-child(2) {
-            margin-right: 2px;
-        }
-
-        &:nth-child(4) {
-            margin-left: 9px;
-        }
-
-        &:nth-child(5) {
-            margin: inherit 2px inherit 7px;
-        }
-
-        &:nth-child(7) {
-            margin: inherit 0px inherit 8px;
-        }
     }
 
     p {
         float: left;
-        margin: 18px inherit inherit 47px;
+        margin: 18px 0px 0px 47px;
     }
 
     .column {
         width: 36px;
         display: inline-block;
         height: 264px;
-        margin: inherit 3px inherit 8px;
+        margin: 0px 3px 0px 8px;
 
         p {
             transform: rotate(270deg);
-            margin: 215px inherit inherit -13px;
+             margin: 215px 0px 0px -13px;
             font-size: 17px;
         }
 
         &:nth-child(2) {
             p {
-                margin: 213px inherit inherit -17px;
+                margin: 213px 0px 0px -17px;
             }
         }
 
         &:nth-child(3) {
             p {
-                margin: 207px inherit inherit -20px;
+                margin: 207px 0px 0px -20px;
             }
         }
 
         &:nth-child(4) {
             p {
-                margin: 198px inherit inherit -31px;
+                margin: 198px 0px 0px -31px;
             }
         }
 
         &:nth-child(5) {
             p {
                 color: white;
-                margin: 211px inherit inherit -18px;
+                margin: 211px 0px 0px -18px;
             }
         }
 
         &:nth-child(6) {
             p {
-                margin: 199px inherit inherit -30px;
+                margin: 199px 0px 0px -30px;
                 color: white;
             }
         }
 
         &:nth-child(7) {
             p {
-                margin: 216px inherit inherit -14px;
+                margin: 216px 0px 0px -14px;
                 color: white;
             }
         }
@@ -636,7 +536,7 @@ html, body {
             }
 
             p {
-                margin: 17px inherit inherit 6px;
+                 margin: 17px 0px 0px 6px;
                 font-size: 16px;
             }
         }
