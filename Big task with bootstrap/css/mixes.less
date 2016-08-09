@@ -1,0 +1,47 @@
+.h3(@font-size,@margin-bottom, @font-family){
+  font-size: @font-size;
+  margin-bottom: @margin-bottom;
+  font-family: @font-family;
+}
+
+
+.before-after-per-st(@display, @content, @margin-left){
+color:#76236c;
+display: @display;
+position: relative;
+content: @content;
+font-size: 60px;
+font-family: Georgia;
+margin-left: @margin-left;
+}
+
+
+.education-text(@font-size, @padding-left)
+{
+  font-family: @font-bold;
+  margin: 0px;
+  font-size: @font-size;
+  padding-left: @padding-left;
+}
+
+.diagram-column-height(@h, @marg-top)
+{
+  height: @h;
+  margin-top: @marg-top;
+}
+
+
+.img(@margin-left){
+  margin:-23px inherit inherit @margin-left;
+  width: 160px;
+  position: absolute;
+}
+
+.legend-block(@margin-left, @margin-top, @background){
+  float: left;
+width: 22px;
+height: 21px;
+display: inline-block; 
+background: @background;
+margin: @margin-top inherit inherit @margin-left;
+}
