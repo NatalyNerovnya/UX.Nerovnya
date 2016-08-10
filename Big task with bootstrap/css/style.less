@@ -42,15 +42,14 @@ html, body {
 .wrapper {
     position: relative;
     min-height: 100%;
-    overflow: auto;
-    overflow-y: hidden;
-    margin-bottom: 50px;
+    overflow: hidden;
+    margin: 0 0 50px 0;
     width: 100%;
 }
 
 .name {
     text-align: center;
-    padding: 2px 24px 0px 0px;
+    padding: 2px 24px 0 0;
 
     h2 {
         .text(63px, -16px, @font-bold);
@@ -62,6 +61,7 @@ html, body {
 
     h3 {
         .text(50px, 25px, @font);
+
         font-weight: 100;
 
         span {
@@ -73,11 +73,12 @@ html, body {
 
 
 .purple-line {
-    .text(27px, 0px, @font-bold);
+    .text(27px, 0, @font-bold);
+
     border-left: #76236c solid 8px;
     text-transform: uppercase;
-    marrgin: 20px 0px 0px 58px;
-    padding-left: 10px;
+    marrgin: 20px 0 0 58px;
+    padding: 0px 0 0 10px;
     height: 36px;
     color: black;
 }
@@ -93,7 +94,7 @@ html, body {
         width: 72%;
 
         &::before {
-            .before-after-per-st(block, "\201C", 0px);
+            .before-after-per-st(block, "\201C", 0);
         }
 
         &::after {
@@ -107,7 +108,7 @@ html, body {
 
     ul {
         list-style: none;
-        margin-top: 30px;
+        margin: 30px 0 0 0;
 
     }
 
@@ -119,13 +120,14 @@ html, body {
             height: 15px;
         }
 
-        div {
+        .block-of-text {
             display: inline-block;
-             margin: -21px 0px 0px 125px;
+            margin: -21px 0 0 125px;
             border-left: none;
 
             h4 {
                 .education-text(21px);
+
                 text-transform: uppercase;
             }
 
@@ -140,24 +142,22 @@ html, body {
 
         p {
             font-family: @font-bold;
-            padding-left: 11px;
-            background-image: url(triangle.png);
+            padding: 0 0 0 11px;
+            background:url(triangle.png) no-repeat;
             background-size: 18px;
-            background-position-x: -5px;
-            background-repeat: no-repeat;
-            background-position-y: 3px;
+            background-position: -5px 3px;
         }
     }
 }
 
 .experience {
-     margin-top: 70px;
+     margin: 70px 0 0 0;
 
     .education {
-        div {
+        .block-of-text {
+            .size(100%, 100%);
+
             border: none;
-            width: 100%;
-            height: 100%;
         }
 
         li {
@@ -169,7 +169,7 @@ html, body {
         }
 
         ul {
-             margin-bottom: 112px;
+             margin: 0 0 112px 0;
         }
 
         p {
@@ -193,8 +193,9 @@ html, body {
     }
 
     p {
-        .text(16px,0px, @font-semi-bold);
-         margin: 0px 0px 0px 91px;
+        .text(16px, 0, @font-semi-bold);
+
+         margin: 0 0 0 91px;
 
         span {
             font-size: 18px;
@@ -205,26 +206,26 @@ html, body {
 
 .available-for {
     h4 {
-      color: black;
+       color: black;
         font-size: 28px;
         text-transform: uppercase;
-        margin: -11px 0px 0px 49px;
+        margin: -11px 0 0 0;
 
         span {
             color: @purple-color;
         }
     }
 
-    div {
-        margin-left: 25px;
+    .circle-with-text {
+        margin:  0 0 0 25px;
     }
 
     h3 {
         &.purple-line {
             border-left: none;
             font-size: 25px;
-            padding-left: 0px;
-            margin: 27px 0px 0px 50px;
+            padding-left: 0;
+            margin: 27px 0 0 0;
         }
     }
 }
@@ -233,17 +234,17 @@ html, body {
 
 .text-in-available-for {
     float: left;
-     margin-top: -21px;
+     margin: -21px 0 0 0;
 
     h4 {
       color: @purple-color;
         font-size: 16px;
-         margin: -12px 0px 0px 42px;
+        margin: -12px 0 0 42px;
     }
 
     h5 {
         font-size: 15px;
-         margin: 2px 0px 0px 42px;
+        margin: 2px 0 0 42px;
     }
 
     &:after {
@@ -252,12 +253,12 @@ html, body {
 }
 
 .circle {
+    .size(32px, 32px);
+
     background: @purple-color;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
+    border-radius: 50%; 
     clear: left;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
 }
 
 .balance {
@@ -266,7 +267,7 @@ html, body {
 
     ul {
         list-style: none;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .work {
@@ -274,11 +275,11 @@ html, body {
         display: inline-block;
 
         .print {
-            margin-top: 39px;
+            margin: 39px 0 0 0;
         }
 
         .digital {
-            margin-top: 19px;
+            margin: 19px 0 0 0;
         }
 
         h4 {
@@ -298,7 +299,7 @@ html, body {
         width: 30%;
 
         h4 {
-            .text(18px, 0px, @font-bold);
+            .text(18px, 0, @font-bold);
         }
 
         p {
@@ -307,35 +308,35 @@ html, body {
     }
 
     .happiness {
+        .size(23%, 100%);
+
         display: inline-block;
         vertical-align: top;
-        width: 23%;
-        height: 100%;
 
         h3 {
             font: 22px @font-bold;
         }
     }
 
-                    span {
-                        color: @purple-color;
-                        font: 18px @font-bold;
-                        text-transform: uppercase;
-                    }
+    span {
+        color: @purple-color;
+        font: 18px @font-bold;
+        text-transform: uppercase;
+    }
 
 }
 
 .vertical-line {
     position: absolute;
     border-left: 1px dotted;
-    margin: 9px 0px 0px 242px;
+    margin: 9px 0 0 242px;
     height: 73%;
 }
 
 .img {
+    .size(220px, 130px);
+
     clear: all;
-    width: 220px;
-    height: 130px;
     position: absolute;
     top: 160px;
     left: 135px;
@@ -351,15 +352,13 @@ html, body {
     }
 }
 
-
-
 .big-circle {
+    .size(120px, 120px);
+
     background: #e368df;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
     opacity: 0.3;
-    margin-top: 5px;
+    margin: 5px 0 0 0;
     position: absolute;
 
     &:first-child {
@@ -376,24 +375,24 @@ html, body {
 
     p {
         clear: left;
-         padding: 5px 0px 0px 48px;
-         margin-bottom: -14px;
+        padding: 5px 0 0 48px;
+        margin: 0 0 -14px 0;
     }
 }
 
 
 .progress-background {
+    .size(210px, 14px);
+
     position: relative;
-    width: 210px;
     float: left;
     background-color: #e2d0e0;
-    height: 14px;
     left: 228px;
     top: -4px;
 
     .progress {
-        height: 100%;
-        width: 70%;
+        .size(70%, 100%);
+
         position: absolute;
         background: linear-gradient(to left, #a2679d 5%, white 50%, white 55%, #a2679d 95%);
 
@@ -419,70 +418,71 @@ html, body {
     }
 }
 
+
 .software-skills {
-    margin-top: 56px;
+    margin: 56px 0 0 0;
 
 
     .diagram {
+        .size(379px, 273px);
+
         display: inline-block;
         border-left: 4px solid;
         border-bottom: 4px solid;
-        width: 379px;
-        height: 273px;
     }
 
     p {
         float: left;
-        margin: 18px 0px 0px 47px;
+        margin: 18px 0 0 47px;
     }
 
     .column {
-        width: 36px;
+        .size(36px, 264px);
+
         display: inline-block;
-        height: 264px;
-        margin: 0px 3px 0px 8px;
+        margin: 0 3px 0 8px;
 
         p {
             transform: rotate(270deg);
-             margin: 215px 0px 0px -13px;
+            margin: 215px 0 0 -13px;
             font-size: 17px;
         }
 
         &:nth-child(2) {
             p {
-                margin: 213px 0px 0px -17px;
+                margin: 213px 0 0 -17px;
             }
         }
 
         &:nth-child(3) {
             p {
-                margin: 207px 0px 0px -20px;
+                margin: 207px 0 0 -20px;
             }
         }
 
         &:nth-child(4) {
             p {
-                margin: 198px 0px 0px -31px;
+                margin: 198px 0 0 -31px;
             }
         }
 
         &:nth-child(5) {
             p {
                 color: white;
-                margin: 211px 0px 0px -18px;
+                margin: 211px 0 0 -18px;
             }
         }
 
         &:nth-child(6) {
             p {
-                margin: 199px 0px 0px -30px;
+                margin: 199px 0 0 -30px;
                 color: white;
             }
         }
 
         &:nth-child(7) {
             p {
-                margin: 216px 0px 0px -14px;
+                margin: 216px 0 0 -14px;
                 color: white;
             }
         }
@@ -526,7 +526,7 @@ html, body {
     }
 
     .legend {
-        div {
+
             .light {
                 .legend-block(103px,11px, linear-gradient(to left, #a2679d 5%, white 50%, white 55%, #a2679d 95%));
             }
@@ -536,9 +536,9 @@ html, body {
             }
 
             p {
-                 margin: 17px 0px 0px 6px;
+                margin: 17px 0 0 6px;
                 font-size: 16px;
             }
         }
     }
-}
+
